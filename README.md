@@ -82,7 +82,7 @@ Now the user has signed up successfully and logged in to the MainActivity. The M
 <img src="https://media.giphy.com/media/ZBQCMF7uMcUuguS7zg/giphy.gif" width="300"> <img src="https://media.giphy.com/media/Y0z271vB3hiEeXfi2Y/giphy.gif" width="300"> 
 
 ### FireStore Database Quiz Collection 
-The questions of the quiz are stored in the Firestore database inside a collection called "Quiz" collection and each document in this collection represents a questions. In order to differentiate between the different types of questions, I've give each question a category that can be used in the code to determine which fragment to display based on the question category type. 
+The questions of the quiz are stored in the Firestore database inside a collection called "Quiz" collection and each document in this collection represents a question. In order to differentiate between the different types of questions, I've give each question a category that can be used in the code to determine which fragment to display based on the question category type. 
 
 ### FireStore Database Quiz Collection Screenshot
 
@@ -90,7 +90,7 @@ The questions of the quiz are stored in the Firestore database inside a collecti
 
 ### Section Two: COVID-19 Symptoms Guide
 
-The user can know more about the COVID-19 Symptoms through going to the Symptoms Guide Section where the Symptoms of the Coronavirus are displayed in the form of scrollable slides and the source of this content is the information from the World Health Organization(WHO) Website. 
+The user can know more about the COVID-19 Symptoms through going to the Symptoms Guide Section where the Symptoms of the Coronavirus are displayed in the form of scrollable slides and the source of this content is the World Health Organization(WHO) Website. 
 
 ### Section Two: COVID-19 Symptoms Guide Screenshot
 
@@ -102,7 +102,7 @@ I've also taken into consideration configuration changes like rotating the devic
  
  ### Section Three: COVID-19 Prevention Guide 
  
-Here the user can know more about the necessary steps that need to be taken to protect himself/herself and their loved ones from the danger of the COVID-19 Virus. In this Prevention Guide Section, the steps are displayed in the form of scrollable slides and the source of this content is the information from the World Health Organization(WHO) Website. I've also taken into consideration configuration changes like rotating the device to the landscape mode and have designed the content to fit both configurations.
+Here the user can know more about the necessary steps that need to be taken to protect himself/herself and their loved ones from the danger of the COVID-19 Virus. In this Prevention Guide Section, the steps are displayed in the form of scrollable slides and the source of this content is again the World Health Organization(WHO) Website. I've also taken into consideration configuration changes like rotating the device to the landscape mode and have designed the content to fit both configurations.
 
  ### Section Three: COVID-19 Prevention Guide Screenshot
 
@@ -111,7 +111,7 @@ Here the user can know more about the necessary steps that need to be taken to p
  
   ### Section Four: COVID-19 Manage Stress Guide 
  
-Here the user can know more about how to manage the stress that results from this crisis and how to deal with it in a healthy way based on advice from from the World Health Organization(WHO) Website. In this Manage Stress Guide Section, the steps are displayed in the form of scrollable slides as shown below. I've also taken into consideration configuration changes like rotating the device to the landscape mode and have designed the content to fit both configurations.
+Here the user can know more about how to manage the stress that results from this crisis and how to deal with it in a healthy way based on advice from from the World Health Organization(WHO) Website. In this Manage Stress Guide Section, the steps are displayed in the form of scrollable slides as shown below. 
 
   ### Section Four: COVID-19 Manage Stress Guide Screenshot
 
@@ -119,13 +119,13 @@ Here the user can know more about how to manage the stress that results from thi
 
  ### Section Five: COVID-19 Common Questions
  
-If the user wants to view the common questions that that people have asked regarding the COVID-19 Virus , he/she should click on the hamburger icon at the top in the toolbar and the navigation drawer will open, then the user can select common questions option and all the common questions will be displayed in the form of cards where the user can expand the card to view the answer and share the question.
+If the user wants to view the common questions that the people have asked regarding the COVID-19 Virus , he/she should click on the hamburger icon at the top in the toolbar and the navigation drawer will open, then the user can select common questions option and all the common questions will be displayed in the form of cards where the user can expand the card to view the answer and share the question.
   
 <img src="https://i.imgur.com/AzZ05Pf.png" width="300"> <img src="https://i.imgur.com/38pMorW.png" width="300"> 
  
 ### Share Option
   
-The user has the option to share the question and the answer that he/she feels might be helpful with friends and family by clicking on the share button, the Android Sharesheet will open with a wide variety of different apps to share the result on and the user can choose from these Apps that range from Email Apps to Social Networking Apps. The share message will be as shown below a text message including the question and a full explanation of it.
+The user has the option to share the question and the answer that he/she feels might be helpful with friends and family by clicking on the share button, the Android Sharesheet will open with a wide variety of different apps to share the question and answer on and the user can choose from these Apps that range from Email Apps to Social Networking Apps. The share message will be as shown below a text message including the question and a full explanation of it.
   
 ### Share option Screenshot
   
@@ -133,7 +133,7 @@ The user has the option to share the question and the answer that he/she feels m
    
  ### FireStore Database Common Questions Collection 
 
-The common questions that are displayed are stored in a collection in Firestore database named "Common questions" and inside this collection each document represent a question as shown below and they are displayed ordered by their index which is a field in each document representing the question number so question one has an index of 1 and question two has an index of 2, etc. So they are displayed in an ascending order from question one till question twenty one or the last question.
+The common questions that are displayed are stored in a collection in Firestore Database named "Common Questions" and inside this collection each document represents a question as shown below and they are displayed ordered by their index which is a field in each document representing the question number so question one has an index of 1 and question two has an index of 2, etc. So they are displayed in an ascending order from question one till question twenty one or the last question.
 
  ### FireStore Database Common Questions Collection Screenshot
  
@@ -141,7 +141,7 @@ The common questions that are displayed are stored in a collection in Firestore 
   
 ###  Section Six: User Profile
   
-Every user has a profile where the name and the email are displayed along with the profile photo if the user has signed up with the Google option. However, if the user has signed up with the Email option then the displayed photo in the user profile will be the default avatar. Also, every user can have a small self introduction about him/her self and if the user is new meaning signed up for the first time, the self introduction displayed will be the default one as shown below. Every user can choose to update the profile by clicking on the update button and now he/she can choose a profile photo, a display name, and a self introduction that he/she likes. The new updates will be saved in Firestore database and displayed in the user profile in addition to the navigation view header as shown below.
+Every user has a profile where the name and the email are displayed along with the profile photo if the user has signed up with the Google option. However, if the user has signed up with the Email option then the displayed photo in the user profile will be the default avatar. Also, every user can have a small self introduction about himself/herself and if the user is new meaning has signed up for the first time, the self introduction displayed will be the default one as shown below. Every user can choose to update the profile by clicking on the update button and now he/she can choose a profile photo, a display name, and a self introduction that he/she likes. The new updates will be saved in Firestore database and displayed in the user profile in addition to the navigation view header as shown below.
 
 ### User Profile Screenshots
   
